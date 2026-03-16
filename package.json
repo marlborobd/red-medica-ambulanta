@@ -1,0 +1,12 @@
+{
+  "name": "ambulanta-red-medica",
+  "scripts": {
+    "dev": "concurrently \"npm run dev --prefix server\" \"npm run dev --prefix client\"",
+    "build": "npm run build --prefix client",
+    "start": "node server/index.js",
+    "init-db": "node server/db/init.js"
+  },
+  "dependencies": {
+    "concurrently": "^8.0.0"
+  }
+}
